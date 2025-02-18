@@ -11,7 +11,8 @@ This is my Frontend Mentor Solution Repository
   <a href="https://sirajshaon.github.io/frontendMentor/qr-code-component-main/"> Frontend Mentor - QR code component solution </a>
 <br/>
 <br/>
-
+2. 
+  <a href="https://sirajshaon.github.io/frontendMentor/social-links-profile-main/"> Social links profile challenge on Frontend Mentor </a>
 <br/>
 <br/>
 
