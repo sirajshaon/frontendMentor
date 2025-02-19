@@ -19,5 +19,8 @@ This is my Frontend Mentor Solution Repository
 <a href="https://sirajshaon.github.io/frontendMentor/recipe-page-main/"> Recipe page challenge on Frontend Mentor </a>
 <br/>
 <br/>
-
+4. 
+<a href="https://sirajshaon.github.io/frontendMentor/product-preview-card-component-main/"> Product preview card component challenge on Frontend Mentor </a>
+<br/>
+<br/>
  </h3></div>
