@@ -16,7 +16,7 @@ This is my Frontend Mentor Solution Repository
 <br/>
 <br/>
 3. 
-  <a href="https://sirajshaon.github.io/frontendMentor/recipe-page-main/"> Recipe page challenge on Frontend Mentor </a>
+
 <br/>
 <br/>
 
