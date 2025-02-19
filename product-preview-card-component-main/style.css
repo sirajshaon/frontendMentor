@@ -136,6 +136,7 @@ button:hover {
   .card {
     flex-direction: column;
     width: calc(100% - 50px);
+    min-width: 250px;
     margin-top: 30px;
   }
   body {
