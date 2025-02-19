@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  /* ### Primary */
+
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+
+  /* ### Neutral */
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  background: var(--Cream);
+  color: var(--Grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 560px;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(103, 97, 97, 0.2);
+  text-align: left;
+  background-color: var(--White);
+}
+
+.hero,
+.details {
+  flex-basis: 50%;
+  height: 100%;
+}
+.desktop {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: block;
+}
+.mobile {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+}
+
+.details {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 25px;
+}
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+h1,
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+h1 {
+  color: var(--Black);
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 30px;
+  width: 90%;
+}
+h2 {
+  color: var(--Green500);
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 30px;
+}
+p {
+  margin-bottom: 40px;
+}
+
+.price {
+  position: relative;
+}
+.price span {
+  text-align: -webkit-auto;
+  text-decoration: line-through;
+  font-size: 12px;
+  position: absolute;
+  top: -3px;
+}
+
+button {
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--Green500);
+  color: var(--White);
+  display: block;
+  margin: 30px auto -15px;
+  border-radius: 5px;
+  width: 100%;
+  border: 0px;
+  cursor: pointer;
+}
+button img {
+  width: 10px;
+  height: auto;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: var(--Green700);
+}
+
+/* mobile  */
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    width: calc(100% - 50px);
+    margin-top: 30px;
+  }
+  body {
+    align-items: flex-start;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
