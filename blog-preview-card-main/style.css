@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Figtree", serif;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree";
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Gray500);
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--White);
+  width: 390px;
+  padding: 20px;
+  border: 1px solid var(--Gray500);
+  border-radius: 15px;
+  box-shadow: 10px 10px 0px 0px var(--Gray950);
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.cardImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cardDetails {
+  text-align: left;
+}
+h6,
+h5,
+h1 {
+  color: var(--Gray950);
+}
+.cardDetails h6 {
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--Yellow);
+  display: inline-block;
+}
+
+.cardDetails h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.cardDetails h1:hover {
+  color: var(--Yellow);
+}
+.pro {
+  margin: 25px 0px 0px;
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.pro h5 {
+  font-size: 18px;
+  font-weight: 800;
+  width: calc(100% - 40px);
+  position: relative;
+  top: 10px;
+}
+/* footer */
+
+.attribution div {
+  padding: 20px 0;
+  display: inline-block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.attribution a:hover {
+  font-size: 20px;
+  font-weight: 700;
+  color: orangered;
+}
+/* mobile */
+
+@media screen and (max-width: 420px) {
+  .card {
+    width: 330px;
+    margin: 10px;
+  }
+  .attribution div {
+    padding: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
