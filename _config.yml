@@ -3,5 +3,6 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 gem "github-pages", group: :jekyll_plugins
 title: Sirajul Islam
+descriptions: BSc graduate in EEE from DUET, Gazipur, Bangladesh.
 theme: jekyll-theme-leap-day
 
