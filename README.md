@@ -28,4 +28,8 @@ This is my Frontend Mentor Solution Repository  <a href="https://sirajshaon.gith
 <a href="https://sirajshaon.github.io/frontendMentor/blog-preview-card-main/"> Blog preview card challenge on Frontend Mentor </a>
 <br/>
 <br/>
+    6. 
+<a href="https://sirajshaon.github.io/frontendMentor/stats-preview-card-component-main/"> Stats preview card component challenge on Frontend Mentor </a>
+<br/>
+<br/>
  </h3></div>
