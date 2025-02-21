@@ -43,6 +43,7 @@ body {
   margin: 0px;
   border-radius: 0px 5px 5px 0px;
   background-color: var(--Softviolet_Accent);
+  position: relative;
 }
 .desktop {
   width: 100%;
@@ -54,6 +55,15 @@ body {
   width: 100%;
   display: none;
   border-radius: 5px 5px 0px 0px;
+}
+.shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Softviolet_Accent);
+  opacity: 0.5;
 }
 .cardDetails {
   padding: 5%;
