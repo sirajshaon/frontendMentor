@@ -26,4 +26,9 @@
 <a href="https://sirajshaon.github.io/frontendMentor/stats-preview-card-component-main/">Stats preview card component challenge on Frontend Mentor </a>
 <br/>
 <br/>
+ 7. 
+<a href="https://sirajshaon.github.io/frontendMentor/results-summary-component-main/"> Results summary component challenge on Frontend Mentor </a>
+<br/>
+<br/>
+  
  </h3></div>
