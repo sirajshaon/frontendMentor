@@ -112,6 +112,9 @@ button {
   border: 0.125rem solid var(--Cyan);
   color: white;
 }
+button:hover {
+  cursor:pointer;
+}
 
 /* responsive */
 
