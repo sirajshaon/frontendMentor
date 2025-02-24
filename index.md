@@ -30,5 +30,8 @@
 <a href="https://sirajshaon.github.io/frontendMentor/results-summary-component-main/"> Results summary component challenge on Frontend Mentor </a>
 <br/>
 <br/>
-  
+  8. 
+<a href="https://sirajshaon.github.io/frontendMentor/3-column-preview-card-component-main/"> 3-column preview card component challenge on Frontend Mentor </a>
+<br/>
+<br/>
  </h3></div>
