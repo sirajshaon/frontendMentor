@@ -40,4 +40,8 @@ This is my Frontend Mentor Solution Repository  <a href="https://sirajshaon.gith
 <a href="https://sirajshaon.github.io/frontendMentor/3-column-preview-card-component-main/"> 3-column preview card component challenge on Frontend Mentor </a>
 <br/>
 <br/>
+  9. 
+<a href="https://sirajshaon.github.io/frontendMentor/single-price-grid-component-master/"> Frontend Mentor - Single price grid component solution </a>
+<br/>
+<br/>
  </h3></div>
