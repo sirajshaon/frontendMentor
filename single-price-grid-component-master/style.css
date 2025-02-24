@@ -1,0 +1,172 @@
+:root {
+  /* ### Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+html,
+body {
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: var(--LightGray);
+  color: var(--LightGray);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 44%;
+  margin: auto;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+.upCard {
+  border-radius: 1rem 1rem 0 0;
+  height: auto;
+  flex-basis: 100%;
+  background-color: white;
+  padding: 6%;
+}
+h1 {
+  color: var(--Cyan);
+  margin: 0;
+}
+h3 {
+  color: var(--BrightYellow);
+  margin: 0.6rem 0 0;
+}
+.upCard p {
+  color: var(--GrayishBlue);
+  margin: 0.5rem 0 0 0;
+}
+.downCard {
+  flex-basis: 100%;
+  display: flex;
+  border-radius: 0 0 1rem 1rem;
+}
+.cardChild {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 6%;
+}
+.cardChild:first-child {
+  background-color: var(--Cyan);
+  border-radius: 0 0 0 1rem;
+}
+.cardChild:last-child {
+  background-color: var(--Cyan);
+  opacity: 0.7;
+  border-radius: 0 0 1rem 0;
+}
+.cardChild h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.price span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.price p {
+  color: var(--LightGray);
+  opacity: 0.8;
+  display: inline-block;
+  padding-left: 0.8rem;
+  margin: 0px;
+}
+.cardChild p {
+  margin-top: 0;
+}
+.cardChild:last-child p {
+  padding-right: 10%;
+}
+button {
+  margin: 5% auto 0;
+  padding: 8% 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  background-color: var(--BrightYellow);
+  border: 0.125rem solid var(--Cyan);
+  color: white;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1050px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    height: auto;
+  }
+  .card {
+    width: 90%;
+    margin: 10% auto;
+    border-radius: 0.5rem;
+  }
+  .upCard {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .downCard {
+    flex-direction: column;
+  }
+  .cardChild {
+    flex-basis: 100%;
+  }
+  .cardChild h3 {
+    color: white;
+    margin: 0 0 0.5rem;
+  }
+  .cardChild:first-child {
+    background-color: var(--Cyan);
+    border-radius: 0;
+  }
+  .cardChild:last-child {
+    background-color: var(--Cyan);
+    opacity: 0.7;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  button {
+    padding: 5%;
+  }
+}
