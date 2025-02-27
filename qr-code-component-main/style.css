@@ -7,11 +7,21 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: hsl(212, 45%, 89%);
   font-family: "Outfit", sans-serif;
   font-size: 15px;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .attribution {
   font-size: 11px;
