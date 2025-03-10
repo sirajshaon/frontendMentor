@@ -41,6 +41,7 @@ body {
 }
 .container {
   max-width: 90rem;
+  margin-bottom: 5%;
   display: grid;
   gap: 1rem;
   padding: 5% 10%;
