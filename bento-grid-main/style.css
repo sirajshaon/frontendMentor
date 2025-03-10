@@ -1,0 +1,366 @@
+:root {
+  /* color */
+  --Purple100: hsl(254, 88%, 90%);
+  --Purple500: hsl(256, 67%, 59%);
+
+  --Yellow100: hsl(31, 66%, 93%);
+  --Yellow500: hsl(39, 100%, 71%);
+
+  --White: hsl(0, 0%, 96%);
+  --Black: hsl(0, 0%, 7%);
+  /* font-size */
+  --xlFont: 3.8rem;
+  --lgFont: 2.6rem;
+  --smFont: 2rem;
+
+  /* layout */
+  --gridTemplateAreas: "box1 box2 box2 box3" "box1 box2 box2 box3"
+    "box1 box2 box2 box3" "box1 box2 box2 box3" "box1 box5 box6 box3"
+    "box4 box5 box6 box3" "box4 box5 box6 box3" "box4 box7 box8 box8"
+    "box4 box7 box8 box8" "box4 box7 box8 box8";
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--Black);
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.container {
+  max-width: 90rem;
+  display: grid;
+  gap: 1rem;
+  padding: 5% 10%;
+  padding-bottom: 0;
+  grid-template-areas: var(--gridTemplateAreas);
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: var(--lgFont);
+  padding-right: 12%;
+}
+.cards {
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  overflow: hidden;
+}
+/* 1 */
+.creatPost {
+  background-color: var(--Yellow100);
+  grid-area: box1;
+  padding-top: 25%;
+}
+.creatPost span {
+  color: var(--Purple500);
+  font-style: italic;
+}
+.creatPost h2 {
+  padding-bottom: 1.3rem;
+  padding-right: 10%;
+}
+.creatPost img {
+  width: 90%;
+}
+/* 2 */
+.fiveStars {
+  background-color: var(--Purple500);
+  grid-area: box2;
+  text-align: center;
+  color: var(--White);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.fiveStars h1 {
+  font-size: var(--xlFont);
+  padding: 1.5rem 0;
+}
+.fiveStars span:nth-child(1) {
+  color: var(--Yellow500);
+}
+.fiveStars span:nth-child(2) {
+  font-style: italic;
+}
+.fiveStars img {
+  width: 11rem;
+  display: inline;
+}
+.fiveStars p {
+  margin: 0.5rem 0 1.5rem;
+}
+/* 3 */
+.bestTime {
+  background-color: var(--Purple100);
+  grid-area: box3;
+  padding-top: 15%;
+  padding-left: 2rem;
+  position: relative;
+}
+.bestTime h2 {
+  font-size: var(--smFont);
+}
+.bestTime img {
+  width: 140%;
+  position: absolute;
+  margin-top: 7%;
+}
+.bestTime p {
+  padding-right: 10%;
+  margin-top: 175%;
+}
+/* 4 */
+.aiContent {
+  background-color: var(--Yellow500);
+  grid-area: box4;
+}
+.aiContent img {
+  margin-top: 20%;
+}
+
+/* 5 */
+.multiplePlatforms {
+  background-color: white;
+  grid-area: box5;
+  position: relative;
+}
+.multiplePlatforms img {
+  position: absolute;
+  width: 122%;
+}
+.multiplePlatforms h2 {
+  font-size: var(--smFont);
+  margin-top: 5.5rem;
+}
+
+/* 6 */
+.postSchedule {
+  background-color: var(--Yellow500);
+  grid-area: box6;
+  position: relative;
+}
+
+.postSchedule h2 {
+  font-size: var(--smFont);
+}
+
+.postSchedule img {
+  width: 80%;
+  position: absolute;
+  margin-top: 1rem;
+}
+/* 7 */
+.audienceGrowth {
+  background-color: white;
+  grid-area: box7;
+}
+
+.audienceGrowth span {
+  font-size: var(--xlFont);
+  font-weight: 500;
+}
+
+.audienceGrowth img {
+  width: 80%;
+  margin-top: 3rem;
+}
+/* 8 */
+.growFollowers {
+  background-color: var(--Purple500);
+  grid-area: box8;
+  display: flex;
+  gap: 1rem;
+}
+.growFollowers img {
+  width: 45%;
+}
+.growFollowers h2 {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+  color: var(--White);
+}
+/* responsive */
+
+@media screen and (max-width: 1290px) {
+  .bestTime p {
+    padding-right: 10%;
+    margin-top: 200%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --gridTemplateAreas: "box2 box8" "box5 box7" "box6 box1" "box3 box4";
+  }
+  .multiplePlatforms img {
+    position: relative;
+    width: 100%;
+  }
+  .multiplePlatforms h2 {
+    font-size: var(--smFont);
+    margin-top: 1rem;
+    padding: 0%;
+  }
+  .postSchedule img {
+    width: 70%;
+    position: absolute;
+    margin-top: 1rem;
+  }
+  .postSchedule h2 {
+    font-size: var(--smFont);
+    padding: 0%;
+  }
+
+  .bestTime {
+    padding-top: 10%;
+  }
+  .bestTime h2 {
+    font-size: var(--smFont);
+    padding: 0%;
+    text-align: center;
+  }
+  .bestTime img {
+    width: 100%;
+    position: relative;
+    margin-top: 7%;
+  }
+  .bestTime p {
+    padding: 0%;
+    margin-top: 7%;
+    text-align: center;
+  }
+
+  .growFollowers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .growFollowers img {
+    width: 80%;
+  }
+  .growFollowers h2 {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .creatPost {
+    padding-top: 10%;
+  }
+
+  .creatPost h2 {
+    padding-bottom: 1.3rem;
+    padding-right: 0%;
+  }
+  .creatPost img {
+    width: 80%;
+  }
+
+  .aiContent img {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --gridTemplateAreas: "box2 " "box5 " "box6 " "box3 " "box8" "box7" "box1"
+      "box4";
+  }
+  .container {
+    padding: 10% 5%;
+  }
+  .fiveStars h1 {
+    font-size: var(--lgFont);
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .fiveStars p {
+    font-size: 1rem;
+  }
+  .multiplePlatforms {
+    padding: 5%;
+  }
+
+  .postSchedule {
+    padding: 5%;
+    aspect-ratio: 7/4;
+  }
+
+  .postSchedule img {
+    width: 60%;
+  }
+  .bestTime {
+    padding: 5%;
+  }
+  .bestTime p {
+    padding: 0 5%;
+  }
+  .growFollowers {
+    padding: 5%;
+  }
+  .growFollowers h2 {
+    padding: 0 5%;
+  }
+  .audienceGrowth span {
+    font-weight: 500;
+  }
+
+  .audienceGrowth img {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .creatPost {
+    padding: 5%;
+  }
+  .creatPost h2 {
+    padding: 0;
+  }
+  .creatPost img {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .aiContent img {
+    width: 80%;
+  }
+  .aiContent h2 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768) and (min-width: 500px) {
+  .cards h2 {
+    font-size: var(--smFont);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards h2 {
+    font-size: 1.375rem;
+  }
+  .creatPost h2 {
+    font-size: 1.75rem;
+    padding: 0;
+  }
+  .audienceGrowth span {
+    font-size: var(--lgFont);
+  }
+}
