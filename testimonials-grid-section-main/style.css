@@ -153,11 +153,6 @@ main {
 }
 /* responsive */
 
-@media screen and (min-width: 1440px) {
-  main {
-    padding: 5%;
-  }
-}
 
 @media screen and (max-width: 1140px) {
   main {
