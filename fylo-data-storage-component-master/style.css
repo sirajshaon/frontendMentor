@@ -1,0 +1,256 @@
+:root {
+  /* ## Colors
+
+### Primary */
+
+  --Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+
+  /* ### Neutral */
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+span {
+  color: var(--Pale-Blue);
+}
+p {
+  color: var(--Grayish-Blue);
+}
+.container {
+  max-width: 1150px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: last baseline;
+  gap: 2rem;
+  padding: 0 15%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  border-radius: 0.5rem;
+  background-color: var(--Dark-Blue);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.cardFile {
+  border-top-right-radius: 7rem;
+  flex-basis: 40%;
+  gap: 2rem;
+}
+.brand,
+.options {
+  flex-basis: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.logo {
+  flex-basis: 50%;
+}
+.options {
+  gap: 1rem;
+}
+.options img {
+  width: 10%;
+  aspect-ratio: 10/8;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--Very-Dark-Blue);
+}
+.cardStorage {
+  flex-basis: 60%;
+  position: relative;
+}
+.storagFree {
+  position: absolute;
+  top: -26%;
+  right: 8%;
+  background-color: white;
+  padding: 2% 4%;
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  display: flex;
+  gap: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.storagFree::after {
+  content: "";
+  border-top: 1.5rem solid white;
+  border-left: 1.5rem solid transparent;
+  position: absolute;
+  bottom: -1.2rem;
+  right: 0;
+}
+.storagFree span {
+  color: var(--Very-Dark-Blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.message {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+}
+.message span {
+  font-weight: 700;
+}
+.bar {
+  background-color: var(--Very-Dark-Blue);
+  height: 1.3rem;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  margin: 0% 0.5%;
+}
+.progress {
+  background-image: linear-gradient(90deg, var(--Gradient));
+  height: 1rem;
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin-left: 0.1rem;
+  border-radius: 1rem;
+}
+.point {
+  background-color: var(--Pale-Blue);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 0.1rem;
+}
+.limit {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+.limit span {
+  padding: 0%;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+}
+@media screen and (max-width: 1170px) and (min-width: 992px) {
+  body {
+    background-size: 120%;
+  }
+  .message {
+    margin-top: 2%;
+  }
+  .bar {
+    margin: 0 0.5%;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  body {
+    background-size: 150%;
+  }
+  .cardFile {
+    border-top-right-radius: 6rem;
+  }
+  .logo {
+    width: 60%;
+  }
+  .options img {
+    padding: 0.8rem;
+  }
+  .storagFree span {
+    font-size: 1.5rem;
+  }
+  .storagFree p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .storagFree {
+    border-radius: 0.5rem;
+    top: auto;
+    bottom: -25%;
+    right: 30%;
+  }
+  .storagFree::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  .container {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    padding: 7%;
+    margin: 0;
+  }
+  .card {
+    padding: 13% 10%;
+    width: 80%;
+    margin: 0;
+  }
+  .cardFile {
+    gap: 2rem;
+  }
+  .cardStorage {
+    padding: 10%;
+  }
+  .storagFree {
+    padding: 3% 7%;
+  }
+  .limit {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .storagFree {
+    right: 24%;
+    padding: 4% 6%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .storagFree {
+    right: 22%;
+  }
+}
