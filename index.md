@@ -4,7 +4,7 @@
     color: rgb(255, 198, 236);
     text-align: left;
     background: maroon;
-    padding: 10px;
+    padding: 10px;border-radius: 20px;
   "
 >
   <h1 style="color: rgb(255, 198, 236); text-align: center">
