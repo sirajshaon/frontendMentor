@@ -1,6 +1,5 @@
 <div
   style="
-    margin: 20px;
     height: 100%;
     color: rgb(255, 198, 236);
     text-align: left;
