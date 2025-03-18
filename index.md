@@ -388,5 +388,28 @@
         Clipboard landing page
       </a>
     </div>
+     <div
+      style="
+        display: flex;
+        gap: 10px;
+        background-color: brown;
+        font-weight: bold;
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        border-radius: 20px;
+        height: -webkit-fill-available;
+      "
+    >
+      17.
+      <a
+        style="text-decoration: none; color: white"
+        href="https://sirajshaon.github.io/frontendMentor/fylo-landing-page-with-two-column-layout-master"
+      >
+        Fylo landing page with two column layout
+      </a>
+    </div>
   </div>
 </div>
