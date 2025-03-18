@@ -72,4 +72,8 @@ This is my Frontend Mentor Solution Repository  <a href="https://sirajshaon.gith
 <a href="https://sirajshaon.github.io/frontendMentor/clipboard-landing-page-master"> Clipboard landing page challenge on Frontend Mentor</a>
 <br/>
 <br/>
+  17. 
+<a href="https://sirajshaon.github.io/frontendMentor/fylo-landing-page-with-two-column-layout-master"> Fylo landing page with two column layout</a>
+<br/>
+<br/>
  </h3></div>
