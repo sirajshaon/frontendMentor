@@ -60,6 +60,7 @@ h4 a {
   gap: 0.5rem;
   background-color: hsla(0, 59%, 41%, 0.495);
   border-radius: 10px;
+  padding: 0 5%;
 }
 .challenge {
   background-color: brown;
