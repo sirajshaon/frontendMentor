@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Pink: hsl(322, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100dvh;
+}
+body {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--Very-Dark-Cyan);
+}
+p {
+  font-size: 1.125rem;
+}
+main img {
+  width: 100%;
+}
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-image: url("images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--Very-Pale-Cyan);
+}
+.headTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 4rem;
+}
+.headTop img {
+  width: 90%;
+}
+.tif {
+  background-color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 3rem;
+  color: var(--Very-Dark-Cyan);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.tif:hover {
+  color: var(--Grayish-Blue);
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+.heroText {
+  flex-basis: 50%;
+}
+.heroText h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--Pink);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+button:hover {
+  background-color: hsl(322, 100%, 80%);
+}
+
+.heroImg {
+  flex-basis: 75%;
+}
+.heroImg img {
+  width: 100%;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 5%;
+}
+.featureBlock {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  padding: 5% 10%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.featureText {
+  flex-basis: 50%;
+}
+.featureImg {
+  flex-basis: 50%;
+}
+.featureBlock:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.rtbyc {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+.floatingBlock {
+  position: absolute;
+  bottom: -50%;
+  left: 30%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 3% 5%;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 4%;
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Pale-Cyan);
+}
+.footerItem {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 5%;
+}
+.footerInfo {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerLogo {
+  width: 65%;
+  margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+.footerInfo p {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footerLinks {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  margin-top: 5rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer a {
+  color: var(--Very-Pale-Cyan);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.socialMedia {
+  flex-basis: 20%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+.socialMedia a {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--Very-Pale-Cyan);
+  border: 2px solid var(--Very-Pale-Cyan);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialMedia a:hover {
+  border-color: hsl(322, 100%, 80%);
+  color: hsl(322, 100%, 80%);
+}
+
+.fab {
+  font-size: 0.75rem;
+  aspect-ratio: 1/1;
+}
+
+.copyright p {
+  text-align: right;
+  padding: 2rem 0;
+}
+
+/* responsive */
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .heroText h1 {
+    font-size: 2rem;
+  }
+  .heroText {
+    flex-basis: 70%;
+  }
+
+  .floatingBlock {
+    inset: 0;
+  }
+  footer {
+    padding: 15% 5% 5%;
+  }
+  .copyright p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    background-image: url("images/bg-hero-mobile.svg");
+  }
+  .headTop .logo {
+    flex-basis: 50%;
+  }
+  .headTop img {
+    width: 70%;
+  }
+  .tif {
+    font-size: 1rem;
+    padding: 0.25rem 2rem;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .heroText {
+    flex-basis: 100%;
+    padding: 3%;
+    text-align: center;
+  }
+  .heroText h1 {
+    font-size: 1.75rem;
+  }
+  .heroImg {
+    margin-top: 5%;
+  }
+  .heroImg img {
+    width: 95%;
+    height: auto;
+  }
+  .featureBlock {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 10% 0%;
+  }
+  .featureBlock:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .featureText {
+    padding: 0 5%;
+    margin-top: 5%;
+  }
+  .featureText p {
+    font-size: 1rem;
+  }
+  .featureImg {
+    padding: 10%;
+  }
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  .rtbyc {
+    padding: 0 10%;
+  }
+  .floatingBlock {
+    inset: 50% 5%;
+    bottom: -25%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    align-items: center;
+    justify-content: center;
+  }
+  .floatingBlock h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  .floatingBlock button {
+    font-size: 0.75rem;
+    padding: 0.5rem 2rem;
+  }
+
+  footer {
+    padding: 25% 5% 5%;
+    font-size: 1rem;
+  }
+  .footerInfo p {
+    font-size: 1rem;
+  }
+  .footerItem {
+    flex-direction: column;
+    gap: 5%;
+  }
+  .footerLogo {
+    width: 45%;
+  }
+  .footerLinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .socialMedia {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .copyright p {
+    text-align: center;
+    font-size: 0.75rem;
+    padding-top: 1rem;
+  }
+}
