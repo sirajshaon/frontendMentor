@@ -76,4 +76,8 @@ This is my Frontend Mentor Solution Repository  <a href="https://sirajshaon.gith
 <a href="https://sirajshaon.github.io/frontendMentor/fylo-landing-page-with-two-column-layout-master"> Fylo landing page with two column layout</a>
 <br/>
 <br/>
+   18. 
+<a href="https://sirajshaon.github.io/frontendMentor/huddle-landing-page-with-alternating-feature-blocks-master" >Huddle landing page with alternating feature blocks</a>
+<br/>
+<br/>
  </h3></div>
