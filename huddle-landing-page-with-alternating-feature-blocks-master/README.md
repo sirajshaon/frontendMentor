@@ -22,8 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](screencapture-desktop.jpg)
-![Mobile](screencapture-mobile.jpg)
+![Desktop](screencapture-desktop.jpg) ![Mobile](screencapture-mobile.jpg)
 
 ### Built with
 
